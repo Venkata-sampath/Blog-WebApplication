@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+
+<div class="container my-5">
+    <% if(posts.length===0) { %>
+        <h1>No Posts Yet.</h1>
+    <% } else { %>
+    <% for(var i=0;i<posts.length;i++){ %>
+    <a href="/<%= posts[i].id %>" class="posts">
+        <div class="card px-5">
+            <div class="card-body"></div>
+            <h1><%= posts[i].title %></h1>  
+            <p><em><%= posts[i].date %></em></p>
+        </div>
+    </a>
+      <hr>
+    <% } %>
+    <% } %>
+</div>
+
+<%- include("partials/footer.ejs") %>

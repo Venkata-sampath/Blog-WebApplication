@@ -1,0 +1,28 @@
+strong.brand{
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+a.posts{
+    text-decoration: none;
+}
+
+.post-content{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.navbar, footer{
+    background-color: #5f758e !important;
+}
+
+.navbar a{
+    color: white;
+}
+
+#editor-container {
+    min-height: 200px; /* Minimum height for the editor */
+    max-height: none;  /* Remove max height limitation */
+    overflow: hidden;  /* Hide scrollbars */
+}
+  

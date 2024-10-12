@@ -1,0 +1,21 @@
+<%- include("partials/header.ejs") %>
+
+<form action="/newpost" method="POST">
+    <div class="container my-4">
+        <div class="mb-3">
+            <input type="text" name="title" class="form-control" id="title" placeholder="Title" required>
+          </div>
+          <input class="date" type="date" id="date" name="date" readonly>
+          <input type="submit">
+          <hr>
+          <div class="mb-3">
+            <!-- quill js editor div -->
+            <div id="editor-container" style="height: 200px;"></div>
+            <!-- Hidden input to store the content -->
+            <input type="hidden" name="content" id="content">
+          </div>
+    </div>
+</form>
+
+
+<%- include("partials/footer.ejs") %>
